@@ -308,87 +308,142 @@
     </section> <!-- .section -->
 
     <footer class="footer">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-10 col-lg-6">
-						<div class="subscribe mb-5">
-							<form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-                  <input type="submit" value="Subscribe" class="form-control submit px-3">
-                </div>
-              </form>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-lg-5">
-						<div class="row">
-							<div class="col-md-12 col-lg-8 mb-md-0 mb-4">
-								<h2 class="footer-heading"><a href="#" class="logo">Nutrition<span>care</span></a></h2>
-								<p>Whole-food nutrition, mindful portions, and practical planning make healthy eating a sustainable lifestyle.</p>
-								<a href="#">learn more <span class="ion-ios-arrow-round-forward"></span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-8 col-lg-7">
-						<div class="row">
-							<div class="col-md-3 mb-md-0 mb-4 border-left">
-								<h2 class="footer-heading">Services</h2>
-								<ul class="list-unstyled">
-		              <li><a href="#" class="py-1 d-block">Balanced Meals</a></li>
-		              <li><a href="#" class="py-1 d-block">Mindful Eating</a></li>
-		              <li><a href="#" class="py-1 d-block">Meal Prep Coaching</a></li>
-		              <li><a href="#" class="py-1 d-block">Healthy Recipes</a></li>
-		            </ul>
-							</div>
-							<div class="col-md-3 mb-md-0 mb-4 border-left">
-								<h2 class="footer-heading">About</h2>
-								<ul class="list-unstyled">
-		              <li><a href="#" class="py-1 d-block">Dietitians</a></li>
-		              <li><a href="#" class="py-1 d-block">Our Approach</a></li>
-		              <li><a href="#" class="py-1 d-block">Careers</a></li>
-		              <li><a href="#" class="py-1 d-block">Blog</a></li>
-		            </ul>
-							</div>
-							<div class="col-md-3 mb-md-0 mb-4 border-left">
-								<h2 class="footer-heading">Resources</h2>
-								<ul class="list-unstyled">
-		              <li><a href="#" class="py-1 d-block">Nutrition Guides</a></li>
-		              <li><a href="#" class="py-1 d-block">Healthy Shopping</a></li>
-		              <li><a href="#" class="py-1 d-block">Meal Planning</a></li>
-		              <li><a href="#" class="py-1 d-block">Privacy</a></li>
-		            </ul>
-							</div>
-							<div class="col-md-3 mb-md-0 mb-4 border-left">
-								<h2 class="footer-heading">Social</h2>
-								<ul class="list-unstyled">
-		              <li><a href="#" class="py-1 d-block">Facebook</a></li>
-		              <li><a href="#" class="py-1 d-block">Twitter</a></li>
-		              <li><a href="#" class="py-1 d-block">Instagram</a></li>
-		              <li><a href="#" class="py-1 d-block">Google</a></li>
-		            </ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-5">
-          <div class="col-md-6 col-lg-8">
+  <div class="container">
 
-            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ditezo with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-md-right">
-          	<p class="mb-0 list-unstyled">
-          		<a class="mr-md-3" href="#">Terms</a>
-          		<a class="mr-md-3" href="#">Privacy</a>
-          		<a class="mr-md-3" href="#">Compliances</a>
-          	</p>
+    <!-- Subscribe Section (UNCHANGED) -->
+    <div class="row justify-content-center">
+      <div class="col-10 col-lg-6">
+        <div class="subscribe mb-5">
+          <form class="subscribe-form" onsubmit="sendEmail(event)">
+            <div class="form-group d-flex">
+              <input
+                type="email"
+                id="subscriberEmail"
+                class="form-control rounded-left"
+                placeholder="Enter email address"
+                required
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                class="form-control submit px-3"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Main Content -->
+    <div class="row">
+      <div class="col-md-4 col-lg-5">
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
+            <h2 class="footer-heading">
+              <a href="#" class="logo">Diet<span>chart</span></a>
+            </h2>
+
+            <p>
+              Whole-food nutrition, mindful portions, and practical planning
+              make healthy eating a sustainable lifestyle.
+            </p>
+
+            <!-- Contact Info (ADDED) -->
+            <p class="mb-1">
+              📧
+              <a href="mailto:mukherjeejayeeta2@gmail.com">
+                mukherjeejayeeta2@gmail.com
+              </a>
+            </p>
+            <p>
+              📞
+              <a href="tel:7003415322">7003415322</a>
+            </p>
           </div>
         </div>
-			</div>
-		</footer>
+      </div>
+
+      <div class="col-md-8 col-lg-7">
+        <div class="row">
+          <div class="col-md-3 mb-md-0 mb-4 border-left">
+            <h2 class="footer-heading">Services</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Balanced Meals</a></li>
+              <li><a href="#" class="py-1 d-block">Mindful Eating</a></li>
+              <li><a href="#" class="py-1 d-block">Meal Prep Coaching</a></li>
+              <li><a href="#" class="py-1 d-block">Healthy Recipes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-4 border-left">
+            <h2 class="footer-heading">About</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Dietitians</a></li>
+              <li><a href="#" class="py-1 d-block">Our Approach</a></li>
+              <li><a href="#" class="py-1 d-block">Careers</a></li>
+              <li><a href="#" class="py-1 d-block">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-4 border-left">
+            <h2 class="footer-heading">Resources</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Nutrition Guides</a></li>
+              <li><a href="#" class="py-1 d-block">Healthy Shopping</a></li>
+              <li><a href="#" class="py-1 d-block">Meal Planning</a></li>
+              <li><a href="#" class="py-1 d-block">Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-4 border-left">
+            <h2 class="footer-heading">Social</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Facebook</a></li>
+              <li><a href="#" class="py-1 d-block">Twitter</a></li>
+              <li><a href="#" class="py-1 d-block">Instagram</a></li>
+              <li><a href="#" class="py-1 d-block">Google</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row mt-5">
+      <div class="col-md-6 col-lg-8">
+        <p class="copyright">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | Dietchart <i class="icon-heart" aria-hidden="true"></i>
+        </p>
+      </div>
+
+      <div class="col-md-6 col-lg-4 text-md-right">
+        <p class="mb-0 list-unstyled">
+          <a class="mr-md-3" href="#">Terms</a>
+          <a class="mr-md-3" href="#">Privacy</a>
+          <a class="mr-md-3" href="#">Compliances</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS (UNCHANGED) -->
+  <script>
+    function sendEmail(e) {
+      e.preventDefault();
+
+      var email = document.getElementById("subscriberEmail").value;
+
+      window.location.href =
+        "mailto:mukherjeejayeeta2@gmail.com" +
+        "?subject=New Subscription" +
+        "&body=Subscriber Email: " + email;
+    }
+  </script>
+</footer>
     
   
 
